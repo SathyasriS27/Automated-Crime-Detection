@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "466324270281",
+    "project_id": "human-pokedex",
+    "storage_bucket": "human-pokedex.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466324270281:android:3417bbab4fc66d1d15b118",
+        "android_client_info": {
+          "package_name": "com.openlab.humanpokedex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466324270281-c6b56j7h31ubojnpqhj3mrk41nc0c8lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXrjeDlSQivEoA0m4uvPI2Q6kNE9FtVKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466324270281-c6b56j7h31ubojnpqhj3mrk41nc0c8lu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

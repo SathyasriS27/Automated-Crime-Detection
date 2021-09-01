@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/student_opencard">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:id="@+id/studentImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="70dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentName"
+            app:layout_constraintTop_toBottomOf="@id/studentImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="45dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:text="Name"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentRegNoTV"
+            app:layout_constraintTop_toBottomOf="@id/studentName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:text="Registration Number:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentRegNo"
+            app:layout_constraintTop_toBottomOf="@id/studentRegNoTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:text="Registration Number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentClassTV"
+            app:layout_constraintTop_toBottomOf="@id/studentRegNo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:text="Class:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentClass"
+            app:layout_constraintTop_toBottomOf="@id/studentClassTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:text="Class"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentYearTV"
+            app:layout_constraintTop_toBottomOf="@id/studentClass"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:text="Year:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentYear"
+            app:layout_constraintTop_toBottomOf="@id/studentYearTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:text="Year"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentDeptTV"
+            app:layout_constraintTop_toBottomOf="@id/studentYear"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:text="Department:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentDept"
+            app:layout_constraintTop_toBottomOf="@id/studentDeptTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:text="Department"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentEmailTV"
+            app:layout_constraintTop_toBottomOf="@id/studentDept"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:text="Email:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentEmail"
+            app:layout_constraintTop_toBottomOf="@id/studentEmailTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:text="Email"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentPhoneTV"
+            app:layout_constraintTop_toBottomOf="@id/studentEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:text="Phone No.:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentPhoneNo"
+            app:layout_constraintTop_toBottomOf="@id/studentPhoneTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:text="Phone No."/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Complaints Log"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/studentPhoneNo"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/complaintsLogBtn"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Tracker Log"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/complaintsLogBtn"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/trackerLogBtn"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

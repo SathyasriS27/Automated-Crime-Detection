@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/complaintProgressLayout">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/complaintProgressBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Wait..."
+            android:id="@+id/complaintProgressTV"
+            app:layout_constraintTop_toBottomOf="@id/complaintProgressBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="65dp"
+            android:textColor="@color/black"
+            android:id="@+id/complaint_offenceTV"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complaint Number:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaint_offenceTV"
+            android:layout_marginTop="65dp"
+            android:id="@+id/complaintNoTV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaintNoTV"
+            android:layout_marginTop="15dp"
+            android:id="@+id/complaintNo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of offender:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaintNo"
+            android:layout_marginTop="45dp"
+            android:id="@+id/complaintOffenderNameTV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaintOffenderNameTV"
+            android:layout_marginTop="15dp"
+            android:id="@+id/complaintOffenderName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offender's Registration Number:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaintOffenderName"
+            android:layout_marginTop="45dp"
+            android:id="@+id/complaintOffenderRegTV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaintOffenderRegTV"
+            android:layout_marginTop="15dp"
+            android:id="@+id/complaintOffenderReg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Offence:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaintOffenderReg"
+            android:layout_marginTop="45dp"
+            android:id="@+id/complaintDateTV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaintDateTV"
+            android:layout_marginTop="15dp"
+            android:id="@+id/complaintDate"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time of Offence:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaintDate"
+            android:layout_marginTop="45dp"
+            android:id="@+id/complaintTimeTV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaintTimeTV"
+            android:layout_marginTop="15dp"
+            android:id="@+id/complaintTime"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaintTime"
+            android:layout_marginTop="45dp"
+            android:id="@+id/complaintDescriptionTV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaintDescriptionTV"
+            android:layout_marginTop="15dp"
+            android:id="@+id/complaintDescription"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/browser_actions_bg_grey"
+            android:id="@+id/complaints_line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/complaintDescription"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/complaints_line"
+            android:text="Complainee Details"
+            android:layout_marginTop="65dp"
+            android:textColor="@color/black"
+            android:id="@+id/complaint_complaineeTV"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaint_complaineeTV"
+            android:layout_marginTop="65dp"
+            android:id="@+id/complaineeNameTV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaineeNameTV"
+            android:layout_marginTop="15dp"
+            android:id="@+id/complaineeName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration Number:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaineeName"
+            android:layout_marginTop="45dp"
+            android:id="@+id/complaineeRegTV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/complaineeRegTV"
+            android:layout_marginTop="15dp"
+            android:id="@+id/complaineeReg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="25dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

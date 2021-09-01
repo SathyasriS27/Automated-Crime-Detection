@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register yourself"
+        android:layout_marginTop="140dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="40sp"
+        android:id="@+id/registerFaceTitle"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registerFaceTitle"
+        android:layout_marginTop="45dp"
+        android:hint="Enter your name."
+        android:id="@+id/registerFaceNameET"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerFaceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Register face"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registerFaceNameET" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

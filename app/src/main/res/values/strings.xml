@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HomoDex</string>
+    <string name="transitionAnimation">Transition Animation</string>
+    <string name="tfe_od_app_name" translation_description="Object Detection demo app [CHAR_LIMIT=40]">Face Recognition</string>
+    <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+    <string name="reg_face_instruction">Hitting the Next button will capture your photos periodically. Try not to switch between front and back cameras during the process. Follow the instructions.</string>
+</resources>

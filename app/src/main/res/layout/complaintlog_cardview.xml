@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    android:id="@+id/complaintlog_cardview"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/complaintlogTimeTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/complaintlogDateTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/complaintlogTimeTV"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/complaintlogTimeTV"
+            app:layout_constraintTop_toTopOf="@id/complaintlogTimeTV"
+            app:layout_constraintBottom_toBottomOf="@id/complaintlogTimeTV"
+            android:layout_marginStart="45dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:id="@+id/complaintlogOffence"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/complaintlogComplaintNoTV"
+            app:layout_constraintStart_toStartOf="@id/complaintlogOffence"
+            app:layout_constraintTop_toTopOf="@id/complaintlogDateTV"
+            app:layout_constraintBottom_toBottomOf="@id/complaintlogDateTV"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
