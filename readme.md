@@ -1,4 +1,4 @@
-# **Human PokeDex**
+# **Automated Crime Detection**
 
 ### A crime detection and campus management system that helps in the detection, classification and subsequent mitigation of crimes occurring in a region of surveillance.  
 
